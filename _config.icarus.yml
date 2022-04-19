@@ -105,16 +105,16 @@ head:
 navbar:
     # Navigation menu items
     menu:
-        Home: /
-        Archives: /archives
-        Categories: /categories
-        Tags: /tags
-        About: /about
+        所有文章: /archives
+        TS服务器: 'https://ts.wbx.gg/'
+        UU服务器: 'https://uu.wbx.gg/'
+        关于我们: /about
+
     # Links to be shown on the right of the navigation bar
     links:
-        Download on GitHub:
+        GitHub:
             icon: fab fa-github
-            url: https://github.com/ppoffice/hexo-theme-icarus
+            url: https://github.com/babywbx/wbx.gg
 # Page footer configurations
 footer:
     # Links to be shown on the right of the footer section
@@ -225,19 +225,19 @@ widgets:
         position: left
         type: profile
         # Author name
-        author: Your name
+        author: WbxClub Gaming
         # Author title
-        author_title: Your title
+        author_title: 
         # Author's current location
-        location: Your location
+        location: 
         # URL or path to the avatar image
         avatar: 
         # Whether show the rounded avatar image
-        avatar_rounded: false
+        avatar_rounded: true
         # Email address for the Gravatar
         gravatar: 
         # URL or path for the follow button
-        follow_link: https://github.com/ppoffice
+        follow_link: 
         # Links to be shown on the bottom of the profile widget
         social_links:
             Github:
@@ -273,8 +273,8 @@ widgets:
         type: links
         # Names and URLs of the sites
         links:
-            Hexo: https://hexo.io
-            Bulma: https://bulma.io
+            WbxClub 官网: 'https://wbxclub.com'
+            WbxClub TeamSpeak 隐私政策: /ts-privacy
     # Categories widget configurations
     -
         # Where should the widget be placed, left sidebar or right sidebar
@@ -295,40 +295,40 @@ widgets:
         # Where should the widget be placed, left sidebar or right sidebar
         position: left
         type: tags
-    # Google FeedBurner email subscription widget configurations
-    -
-        # Where should the widget be placed, left sidebar or right sidebar
-        position: left
-        type: subscribe_email
-        # Hint text under the email input
-        description: 
-        # Feedburner ID
-        feedburner_id: ''
-    # Google AdSense unit configurations
-    -
-        # Where should the widget be placed, left sidebar or right sidebar
-        position: left
-        type: adsense
-        # AdSense client ID
-        client_id: ''
-        # AdSense AD unit ID
-        slot_id: ''
-    # Follow.it email subscription widget configurations
-    -
-        # Where should the widget be placed, left sidebar or right sidebar
-        position: left
-        type: followit
-        # Hint text under the email input
-        description: 
-        # Subscription form action URL
-        action_url: ''
-        # Feed claiming verification code
-        verification_code: ''
+    # # Google FeedBurner email subscription widget configurations
+    # -
+    #     # Where should the widget be placed, left sidebar or right sidebar
+    #     position: left
+    #     type: subscribe_email
+    #     # Hint text under the email input
+    #     description: 
+    #     # Feedburner ID
+    #     feedburner_id: ''
+    # # Google AdSense unit configurations
+    # -
+    #     # Where should the widget be placed, left sidebar or right sidebar
+    #     position: left
+    #     type: adsense
+    #     # AdSense client ID
+    #     client_id: ''
+    #     # AdSense AD unit ID
+    #     slot_id: ''
+    # # Follow.it email subscription widget configurations
+    # -
+    #     # Where should the widget be placed, left sidebar or right sidebar
+    #     position: left
+    #     type: followit
+    #     # Hint text under the email input
+    #     description: 
+    #     # Subscription form action URL
+    #     action_url: ''
+    #     # Feed claiming verification code
+    #     verification_code: ''
 # Plugin configurations
 # https://ppoffice.github.io/hexo-theme-icarus/categories/Plugins/
 plugins:
     # Enable page startup animations
-    animejs: true
+    animejs: false
     # Show the "back to top" button
     back_to_top: true
     # Baidu Analytics plugin settings
