@@ -5,11 +5,11 @@ on:
     branches:
       - main
     paths-ignore:
-      - '.github/*'
-      - 'README.md'
-      - 'package.json'
-      - 'package-lock.json'
-      - 'yarn.lock'
+      - '.github/**'
+      - '**/README.md'
+      - '**/package.json'
+      - '**/package-lock.json'
+      - '**/yarn.lock'
 
 jobs:
   Deploy-to-server:
