@@ -1,0 +1,31 @@
+name: Production Deployment
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  Deploy-to-server:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+
+      - name: Setup Node.js & Generate
+        uses: actions/setup-node@v3
+        with:
+          node-version: '16'
+          cache: 'npm'
+      - run: npm install hexo-cli -g
+      - run: npm install
+      - run: hexo generate
+
+      - name: FTP Deploy
+        uses: SamKirkland/FTP-Deploy-Action@4.3.0
+        with:
+          server: ${{ secrets.FTP_SERVER }}
+          username: ${{ secrets.FTP_USERNAME }}
+          password: ${{ secrets.FTP_PASSWORD }}
+          local-dir: ./public
+          server-dir: /wbx.gg
