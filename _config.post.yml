@@ -1,0 +1,48 @@
+widgets:
+    -
+        position: left
+        type: profile
+        author: WbxClub Gaming
+        author_title: 
+        location: 
+        avatar: /img/avatar.jpg
+        avatar_rounded: true
+        gravatar: 
+        follow_link: 
+        social_links:
+            Github:
+                icon: fab fa-github
+                url: https://github.com/ppoffice
+            Facebook:
+                icon: fab fa-facebook
+                url: https://facebook.com
+            Twitter:
+                icon: fab fa-twitter
+                url: https://twitter.com
+            Dribbble:
+                icon: fab fa-dribbble
+                url: https://dribbble.com
+            RSS:
+                icon: fas fa-rss
+                url: /
+    -
+        position: left
+        type: toc
+        index: true
+        collapsed: true
+        depth: 3
+    -
+        position: left
+        type: links
+        links:
+            WbxClub 官网: 'https://wbxclub.com'
+            WbxClub TeamSpeak 隐私政策: /ts-privacy
+    -
+        type: recent_posts
+        position: left
+    -
+        type: categories
+        position: left
+    -
+        type: tags
+        position: left
