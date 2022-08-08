@@ -1008,6 +1008,10 @@ buffer-from@^1.0.0:
   version "1.1.2"
   resolved "https://registry.npmjs.org/buffer-from/-/buffer-from-1.1.2.tgz"
 
+bulma-stylus@0.8.0:
+  version "0.8.0"
+  resolved "https://registry.yarnpkg.com/bulma-stylus/-/bulma-stylus-0.8.0.tgz#137c182a1fdf9ac82f2e73bd3163aac454b105ae"
+
 bytes@3.0.0:
   version "3.0.0"
   resolved "https://registry.npmjs.org/bytes/-/bytes-3.0.0.tgz"
@@ -1481,11 +1485,14 @@ hexo-cli@^4.3.0:
     resolve "^1.11.0"
     tildify "^2.0.0"
 
-hexo-component-inferno@^1.0.2:
-  version "1.1.0"
-  resolved "https://registry.npmjs.org/hexo-component-inferno/-/hexo-component-inferno-1.1.0.tgz"
+hexo-component-inferno@^1.2.0:
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/hexo-component-inferno/-/hexo-component-inferno-1.2.0.tgz#0e7130905fe1e44b452397fd471ed65d1e5f48dc"
   dependencies:
     ajv "^8.8.2"
+    hexo "^6.0.0"
+    hexo-pagination "^2.0.0"
+    hexo-util "^2.2.0"
     inferno "^7.3.3"
     inferno-create-element "^7.3.3"
     js-yaml "^4.1.0"
@@ -1566,6 +1573,10 @@ hexo-pagination@1.0.0:
   version "1.0.0"
   resolved "https://registry.npmjs.org/hexo-pagination/-/hexo-pagination-1.0.0.tgz"
 
+hexo-pagination@^2.0.0:
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/hexo-pagination/-/hexo-pagination-2.0.0.tgz#41283f7daab56ea29f2a4c52f9b91e0cbf8a4bdb"
+
 hexo-renderer-inferno@^0.1.3:
   version "0.1.3"
   resolved "https://registry.npmjs.org/hexo-renderer-inferno/-/hexo-renderer-inferno-0.1.3.tgz"
@@ -1587,7 +1598,7 @@ hexo-renderer-marked@^5.0.0:
     jsdom "^19.0.0"
     marked "^4.0.1"
 
-hexo-renderer-stylus@^2.1.0:
+hexo-renderer-stylus@^2.0.0, hexo-renderer-stylus@^2.1.0:
   version "2.1.0"
   resolved "https://registry.yarnpkg.com/hexo-renderer-stylus/-/hexo-renderer-stylus-2.1.0.tgz#4cbae08d36c7390b791c2cc3df7c53c3ff615106"
   dependencies:
@@ -1607,18 +1618,25 @@ hexo-server@^3.0.0:
     picocolors "^1.0.0"
     serve-static "^1.14.1"
 
-hexo-theme-icarus@^5.0.0-rc.1:
-  version "5.0.0-rc.1"
-  resolved "https://registry.npmjs.org/hexo-theme-icarus/-/hexo-theme-icarus-5.0.0-rc.1.tgz"
+hexo-theme-icarus@^5.0.1:
+  version "5.0.1"
+  resolved "https://registry.yarnpkg.com/hexo-theme-icarus/-/hexo-theme-icarus-5.0.1.tgz#08c3d800390d406ee8cd3a973abcf550a10b3838"
   dependencies:
+    bulma-stylus "0.8.0"
     deepmerge "^4.2.2"
-    hexo-component-inferno "^1.0.2"
+    hexo "^6.0.0"
+    hexo-component-inferno "^1.2.0"
+    hexo-log "^3.0.0"
+    hexo-pagination "^2.0.0"
+    hexo-renderer-inferno "^0.1.3"
+    hexo-renderer-stylus "^2.0.0"
+    hexo-util "^2.4.0"
     inferno "^7.3.3"
     inferno-create-element "^7.3.3"
     moment "^2.22.2"
     semver ">=5.0.0"
 
-hexo-util@^2.0.0, hexo-util@^2.1.0, hexo-util@^2.5.0, hexo-util@^2.6.1:
+hexo-util@^2.0.0, hexo-util@^2.1.0, hexo-util@^2.2.0, hexo-util@^2.4.0, hexo-util@^2.5.0, hexo-util@^2.6.1:
   version "2.6.1"
   resolved "https://registry.yarnpkg.com/hexo-util/-/hexo-util-2.6.1.tgz#19b79a1ec751a735ffe34766b65d8e2039c00519"
   dependencies:
@@ -1631,7 +1649,7 @@ hexo-util@^2.0.0, hexo-util@^2.1.0, hexo-util@^2.5.0, hexo-util@^2.6.1:
     prismjs "^1.17.1"
     strip-indent "^3.0.0"
 
-hexo@^6.2.0:
+hexo@^6.0.0, hexo@^6.2.0:
   version "6.2.0"
   resolved "https://registry.yarnpkg.com/hexo/-/hexo-6.2.0.tgz#5a62a4c731bf89431d2004326b07af0ec0490242"
   dependencies:
@@ -2277,19 +2295,19 @@ semver@7.0.0:
   version "7.0.0"
   resolved "https://registry.npmjs.org/semver/-/semver-7.0.0.tgz"
 
-semver@>=5.0.0, semver@^6.1.1, semver@^6.1.2, semver@^6.3.0:
-  version "6.3.0"
-  resolved "https://registry.npmjs.org/semver/-/semver-6.3.0.tgz"
+semver@>=5.0.0, semver@^7.1.1:
+  version "7.3.7"
+  resolved "https://registry.npmjs.org/semver/-/semver-7.3.7.tgz"
+  dependencies:
+    lru-cache "^6.0.0"
 
 semver@^5.6.0:
   version "5.7.1"
   resolved "https://registry.npmjs.org/semver/-/semver-5.7.1.tgz"
 
-semver@^7.1.1:
-  version "7.3.7"
-  resolved "https://registry.npmjs.org/semver/-/semver-7.3.7.tgz"
-  dependencies:
-    lru-cache "^6.0.0"
+semver@^6.1.1, semver@^6.1.2, semver@^6.3.0:
+  version "6.3.0"
+  resolved "https://registry.npmjs.org/semver/-/semver-6.3.0.tgz"
 
 send@0.18.0:
   version "0.18.0"
